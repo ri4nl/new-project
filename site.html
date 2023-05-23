@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>História do Futebol</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .timeline {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .event {
+            position: relative;
+            padding: 20px;
+            background-color: #f6b93b;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .event:hover {
+            transform: scale(1.05);
+        }
+        
+        .year {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .description {
+            color: #fff;
+        }
+        
+        .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta:hover {
+            background-color: #1a5276;
+        }
+    </style>
+    <script>
+        // JavaScript para animar os eventos ao serem clicados
+        function animateEvent(eventId) {
+            var event = document.getElementById(eventId);
+            event.classList.add("animated");
+            setTimeout(function() {
+                event.classList.remove("animated");
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>História do Futebol Brasileiro</h1>
+        
+        <div class="timeline">
+            <div id="event1" class="event" onclick="animateEvent('event1')">
+                <div class="year">1958</div>
+                <p class="description">A nossa primeira copa, aparece pelé.</p>
+                <a class="cta" href="https://www.youtube.com/watch?v=MvPP2-xW_BI">Saiba mais</a>
+            </div>
+            
+            <div id="event2" class="event" onclick="animateEvent('event2')">
+                <div class="year">1970</div>
+                <p class="description">O tricampeonato com o nosso esquadrão</p>
+                <a class="cta" href="https://www.youtube.com/watch?v=Kf75JoXcE5k">Saiba mais</a>
+            </div>
+            
+            <div id="event3" class="event" onclick="animateEvent('event3')">
+            <div class="year">2002</div>
+            <p class="description">Nossa última conquista. </p> 
+            <a class="cta" href="https://www.youtube.com/watch?v=J5orfPMOyn8"> Saiba mais </a> 
+        </div>	
+    <div    id="event4" class="event" onclick="animateEvent('event4')">
+            <div class="year">2014</div>
+            <p class="description">Vergonha dentro de casa.</p>
+            <a class="cta" href="https://www.youtube.com/watch?v=y0sErMCZVV4&pp=ygUbY29wYSAyMDE0IGJyYXNpbCB4IGFsZW1hbmhh">Saiba mais</a>
+        </div>
+    </div>
+
+    <div id="event5" class="event" onclick="animateEvent('event5')">
+        <div class="year">2026</div>
+        <p class="description">Nossa próxima esperança</p>
+        <a class="cta" href="https://www.youtube.com/watch?v=2bcSwhpNTJg&pp=ygUiY29wYSAyMDI2IGpvdmVucyBwcm9tZXNzYXMgYnJhc2lsXQ%3D%3D">Saiba mais</a>
+    </div>
+</div>
+
+	</body> </html> ``
